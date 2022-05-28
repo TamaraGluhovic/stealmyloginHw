@@ -26,6 +26,13 @@ public class Homework2 {
             System.out.println("Not nice");
         }
 
+        try {
+            Thread.sleep(4000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.close();
+
 
     }
 }
